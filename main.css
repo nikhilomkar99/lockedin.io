@@ -225,19 +225,21 @@ body {
 
 
      .heading-primary-main {
+          font-family: 'muller_demoextrabold';
           display: block;
-          font-size: 20px;
+          font-size: 40px;
           font-weight: 700;
           letter-spacing: 35px;
           animation-name: moveLeft;
           animation-duration: 1s;
+          margin-bottom: 10px;
 
 
      }
 
      .heading-sub {
           display: block;
-          font-size: 20px;
+          font-size: 15px;
           letter-spacing: 17.4px;
           /* animation-name: moveRight;
           animation-duration: 1s;
