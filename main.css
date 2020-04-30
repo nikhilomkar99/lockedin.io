@@ -1,12 +1,11 @@
-
 @font-face {
      font-family: 'muller_demoextrabold';
      src: url('font/MULLER/mullerdemo-extrabold-webfont.woff2') format('woff2'),
           url('font/MULLER/mullerdemo-extrabold-webfont.woff') format('woff');
      font-weight: normal;
      font-style: normal;
- 
- }
+
+}
 
 * {
      margin: 0;
@@ -15,8 +14,8 @@
 }
 
 body {
-     
-     
+
+
      font-weight: 400;
      font-size: 16px;
      line-height: 1.7;
@@ -57,7 +56,7 @@ body {
 }
 
 .heading-primary {
-     
+
      color: #fff;
      text-transform: uppercase;
 
@@ -107,54 +106,54 @@ body {
      border-radius: 100px;
      transition: all .2s;
      position: relative;
-     
+
 }
 
-.btn:hover{
+.btn:hover {
      transform: translateY(-3px);
-     box-shadow: 0 10px 20px rgba(0,0,0,.2);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 
 
-.btn:active{
+.btn:active {
      transform: translateY(-1px);
-     box-shadow: 0 5px 10px  rgba(0,0,0,.2);
+     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
-.btn-white{
+.btn-white {
      background-color: #fff;
      color: #777;
-    
+
 }
 
-.btn::after{
+.btn::after {
      content: "";
-     display:inline-block;
+     display: inline-block;
      height: 100%;
      width: 100%;
      border-radius: 100px;
      position: absolute;
      top: 0;
-     left:0;
+     left: 0;
      z-index: -1;
-     transition: all .4s ;
+     transition: all .4s;
 
 
 }
 
-.btn-white::after{
+.btn-white::after {
      background-color: #fff;
 }
 
-.btn:hover::after{
+.btn:hover::after {
      transform: scaleX(1.5) scaleY(1.6);
      opacity: 0;
 
 }
 
 
-.btn-animate{
+.btn-animate {
      animation-name: btn-ani;
      animation-duration: 1s;
      animation-timing-function: ease-out;
@@ -214,17 +213,17 @@ body {
 
 }
 
-@keyframes btn-ani{
+@keyframes btn-ani {
 
-     0%{
-          opacity:0;
-          transform:translateY(30px);
+     0% {
+          opacity: 0;
+          transform: translateY(30px);
 
      }
 
-     100%{
-          opacity:1;
-          transform:translate(0);
+     100% {
+          opacity: 1;
+          transform: translate(0);
 
      }
 
@@ -285,5 +284,16 @@ body {
      .logo:hover {
           animation: logo 0.7s ease;
      }
+
+
+     .btn-animate {
+          animation-name: btn-ani;
+          animation-duration: 1s;
+          animation-timing-function: ease-out;
+          animation-delay: 3s;
+          animation-fill-mode: backwards;
+     }
+
+
 
 }
