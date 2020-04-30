@@ -287,14 +287,6 @@ body {
      }
 
 
-     .btn-animate {
-          animation-name: btn-ani;
-          animation-duration: 1s;
-          animation-timing-function: ease-out;
-          animation-delay: 3s;
-          animation-fill-mode: backwards;
-     }
-
 
 
 }
