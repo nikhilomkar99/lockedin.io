@@ -35,7 +35,7 @@ body {
 }
 
 .logo:hover {
-     height: 60px;
+    animation: logo 1s ease;
 }
 
 .text-box {
@@ -60,6 +60,8 @@ body {
      letter-spacing: 35px;
      animation-name: moveLeft;
      animation-duration: 1s;
+     animation-delay: 1s;
+     animation-timing-function: ease-out;
 
 
 }
@@ -68,6 +70,11 @@ body {
      display: block;
      font-size: 20px;
      letter-spacing: 17.4px;
+     /* animation-name: moveRight;
+     animation-duration: 1s;
+     animation-delay: 2s;
+     animation-timing-function: ease-out; */
+     animation: moveRight 1s 2s ease-out;
 }
 
 @keyframes moveLeft {
@@ -93,10 +100,30 @@ body {
           transform: translateX(100px);
      }
 
+     80%{
+          transform: translateX(-10px);
+     }
+
      100% {
           opacity: 1;
           transform: translate(0);
      }
+}
+
+@keyframes logo{
+     0%{
+          opacity: 1;
+          transform: translate(0);
+     }
+     50%{
+          opacity: 1;
+          transform:rotate(90deg);
+     }
+     100%{
+          opacity: 1;
+          transform: translate(0);
+     }
+    
 }
 
 
