@@ -77,12 +77,14 @@ body {
      animation-delay: 1s;
      animation-timing-function: ease-out;
      animation-fill-mode: backwards;
+     margin-bottom: 15px;
 
 
 }
 
 .heading-sub {
-     font-family: 'Lato', sans-serif;
+     /* font-family: 'Lato', sans-serif; */
+     font-family: 'Montserrat', sans-serif;
      display: block;
      font-size: 20px;
      letter-spacing: 17.4px;
@@ -262,11 +264,12 @@ body {
           animation-name: moveLeft;
           animation-duration: 1s;
           margin-bottom: 10px;
-
+          animation-fill-mode: backwards;
 
      }
 
      .heading-sub {
+          font-family: 'Montserrat', sans-serif;
           display: block;
           font-size: 15px;
           letter-spacing: 17.4px;
@@ -275,6 +278,7 @@ body {
           animation-delay: 2s;
           animation-timing-function: ease-out; */
           animation: moveRight 1s 2s ease-out;
+          animation-fill-mode: backwards;
      }
 
 
