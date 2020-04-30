@@ -76,6 +76,7 @@ body {
      animation-duration: 1s;
      animation-delay: 1s;
      animation-timing-function: ease-out;
+     animation-fill-mode: backwards;
 
 
 }
@@ -90,6 +91,7 @@ body {
      animation-delay: 2s;
      animation-timing-function: ease-out; */
      animation: moveRight 1s 2s ease-out;
+     animation-fill-mode: backwards;
 }
 
 .btn:link,
@@ -103,6 +105,7 @@ body {
      border-radius: 100px;
      transition: all .2s;
      position: relative;
+     
 }
 
 .btn:hover{
@@ -146,6 +149,15 @@ body {
      transform: scaleX(1.5) scaleY(1.6);
      opacity: 0;
 
+}
+
+
+.btn-animate{
+     animation-name: btn-ani;
+     animation-duration: 1s;
+     animation-timing-function: ease-out;
+     animation-delay: 3s;
+     animation-fill-mode: backwards;
 }
 
 
@@ -200,6 +212,23 @@ body {
 
 }
 
+@keyframes btn-ani{
+
+     0%{
+          opacity:0;
+          transform:translateY(30px);
+
+     }
+
+     100%{
+          opacity:1;
+          transform:translate(0);
+
+     }
+
+
+
+}
 
 
 @media (max-width:580px) {
