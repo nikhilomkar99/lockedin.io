@@ -219,14 +219,14 @@ body {
           text-transform: uppercase;
 
           backface-visibility: hidden;
-          margin-bottom: 50px;
+          margin-bottom: 40px;
 
      }
 
 
      .heading-primary-main {
           display: block;
-          font-size: 40px;
+          font-size: 20px;
           font-weight: 700;
           letter-spacing: 35px;
           animation-name: moveLeft;
