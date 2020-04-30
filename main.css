@@ -98,3 +98,29 @@ body {
           transform: translate(0);
      }
 }
+
+
+
+@media (max-width:580px) {
+     .header {
+          position: relative;
+          height: 100vh;
+          background-image: linear-gradient(to right top, #000046d7, rgba(28, 181, 224, 0.199)), url('images/header-mobile.jpg');
+          background-position: top;
+          background-size: cover;
+
+     }
+
+
+     .heading-primary-main {
+          display: block;
+          font-size: 40px;
+          font-weight: 700;
+          letter-spacing: 35px;
+          animation-name: moveLeft;
+          animation-duration: 1s;
+
+
+     }
+
+}
