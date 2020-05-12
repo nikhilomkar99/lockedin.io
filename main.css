@@ -7,7 +7,8 @@
 
 }
 
-* {
+* {  
+     
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -15,7 +16,7 @@
 
 body {
 
-
+     
      font-weight: 400;
      font-size: 16px;
      line-height: 1.7;
@@ -163,23 +164,27 @@ body {
 }
 
 
+
+
 .section-about {
-     background-color: #f7f7f7;
-     padding: 10rem 0;
+     background-color:#f9f9f9;
+    
 }
 
-.heading-secondary {
-    
+.heading-section-about{
      font-family: 'muller_demoextrabold';
-     font-size: 2.5rem;
+     font-size: 3.5rem;
      text-transform: uppercase;
      font-weight: 700;
      background-image: linear-gradient(to right,
      rgba(0, 0, 70, 0.897),
      rgba(28, 181, 224, 0.432)
      );
-     letter-spacing: 2px;
+     letter-spacing: 4px;
      transition: all .2s;
+
+     margin: 100px 0;
+
 
      /* text-gradient */
 
@@ -188,11 +193,92 @@ body {
      -webkit-background-clip:text;
      color:transparent;
 
+
 }
 
-.heading-secondary:hover{
+
+
+.heading-section-about:hover{
      transform: skewY(3deg) skewX(3deg);
      text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+}
+
+.rules{
+     font-size: 18px;
+     text-align: center;
+     
+
+}
+
+
+
+
+
+/*section about images*/
+
+
+
+
+.distancing{
+     height: 200px;
+     margin-bottom: 20px;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+     
+}   
+
+.handwash{
+     height: 200px;
+     margin-bottom: 20px;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+
+}
+
+.work-from-home{
+     height: 200px;
+     margin-bottom: 20px;
+     padding-right: 0;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+.cover-cough{
+     height: 200px;
+     margin: 20px 0;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+
+.mask{
+     height: 200px;
+     margin: 20px 0;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+.illness{
+     height: 200px;
+     margin: 20px 0;
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+.handwash:hover,
+.distancing:hover,
+.work-from-home:hover,
+.cover-cough:hover,
+.illness:hover,
+.mask:hover{
+     transform:scale(1.1,1.1);
+     
 }
 
 
@@ -321,8 +407,6 @@ body {
      .logo:hover {
           animation: logo 0.7s ease;
      }
-
-
 
 
 }
