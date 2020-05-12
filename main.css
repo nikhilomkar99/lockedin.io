@@ -283,7 +283,7 @@ body {
 
 
 
-.handwash:hover,
+/* .handwash:hover,
 .distancing:hover,
 .work-from-home:hover,
 .cover-cough:hover,
@@ -291,6 +291,14 @@ body {
 .mask:hover {
      transform: scale(1.1, 1.1);
 
+} */
+
+.hoverable {
+    transition: all 0.3s;
+}
+
+.hover {
+    transform: scale(1.1, 1.1);
 }
 
 
