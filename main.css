@@ -7,8 +7,8 @@
 
 }
 
-* {  
-     
+* {
+
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -16,7 +16,7 @@
 
 body {
 
-     
+
      font-weight: 400;
      font-size: 16px;
      line-height: 1.7;
@@ -167,19 +167,18 @@ body {
 
 
 .section-about {
-     background-color:#f9f9f9;
-    
+     background-color: #f9f9f9;
+
 }
 
-.heading-section-about{
+.heading-section-about {
      font-family: 'muller_demoextrabold';
      font-size: 3.5rem;
      text-transform: uppercase;
      font-weight: 700;
      background-image: linear-gradient(to right,
-     rgba(0, 0, 70, 0.897),
-     rgba(28, 181, 224, 0.432)
-     );
+               rgba(0, 0, 70, 0.897),
+               rgba(28, 181, 224, 0.432));
      letter-spacing: 4px;
      transition: all .2s;
 
@@ -188,25 +187,25 @@ body {
 
      /* text-gradient */
 
-     
+
      display: inline-block;
-     -webkit-background-clip:text;
-     color:transparent;
+     -webkit-background-clip: text;
+     color: transparent;
 
 
 }
 
 
 
-.heading-section-about:hover{
+.heading-section-about:hover {
      transform: skewY(3deg) skewX(3deg);
      text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
 }
 
-.rules{
+.rules {
      font-size: 18px;
      text-align: center;
-     
+
 
 }
 
@@ -216,72 +215,40 @@ body {
 
 /*section about images*/
 
-
-
-
-.distancing{
-     height: 200px;
+.distancing,
+.handwash,
+.work-from-home {
+     height: 150px;
      margin-bottom: 20px;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
+     /* -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-     
-}   
-
-.handwash{
-     height: 200px;
-     margin-bottom: 20px;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-
+     box-shadow: 0 10px 6px -6px #777; */
 }
 
-.work-from-home{
-     height: 200px;
-     margin-bottom: 20px;
-     padding-right: 0;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-}
 
-.cover-cough{
-     height: 200px;
+.cover-cough,
+.mask,
+.illness {
+     height: 150px;
      margin: 20px 0;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-}
-
-
-.mask{
-     height: 200px;
-     margin: 20px 0;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
+     /* -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
+     box-shadow: 0 10px 6px -6px #777; */
+
+
 }
 
-.illness{
-     height: 200px;
-     margin: 20px 0;
-     -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-}
+
 
 .handwash:hover,
 .distancing:hover,
 .work-from-home:hover,
 .cover-cough:hover,
 .illness:hover,
-.mask:hover{
-     transform:scale(1.1,1.1);
-     
+.mask:hover {
+     transform: scale(1.1, 1.1);
+
 }
-
-
 
 
 @keyframes moveLeft {
@@ -406,6 +373,20 @@ body {
 
      .logo:hover {
           animation: logo 0.7s ease;
+     }
+
+     .rules {
+          font-size: 15px;
+
+     }
+
+     .distancing,
+     .handwash,
+     .work-from-home,
+     .cover-cough,
+     .mask,
+     .illness {
+          height: 100px;
      }
 
 
