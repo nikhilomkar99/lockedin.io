@@ -1,393 +1,343 @@
 @font-face {
-     font-family: 'muller_demoextrabold';
-     src: url('font/MULLER/mullerdemo-extrabold-webfont.woff2') format('woff2'),
-          url('font/MULLER/mullerdemo-extrabold-webfont.woff') format('woff');
-     font-weight: normal;
-     font-style: normal;
-
+    font-family: "muller_demoextrabold";
+    src: url("font/MULLER/mullerdemo-extrabold-webfont.woff2") format("woff2"),
+        url("font/MULLER/mullerdemo-extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
-
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-
-
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 1.7;
-     color: #777;
-
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
 }
 
 .header {
-     position: relative;
-     height: 100vh;
-     background-image: linear-gradient(to right top, #000046d7, rgba(28, 181, 224, 0.199)), url('images/408.jpg');
-     background-position: top;
-     background-size: cover;
-
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(
+            to right top,
+            #000046d7,
+            rgba(28, 181, 224, 0.199)
+        ),
+        url("images/408.jpg");
+    background-position: top;
+    background-size: cover;
 }
 
 .logo-box {
-     position: absolute;
-     top: 40px;
-     left: 40px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
 }
 
 .logo {
-     height: 50px;
-
+    height: 50px;
 }
 
 .logo:hover {
-     animation: logo 1s ease;
+    animation: logo 1s ease;
 }
 
 .text-box {
-     position: absolute;
-     top: 45%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
 
-     color: #fff;
-     text-transform: uppercase;
-
-     backface-visibility: hidden;
-     margin-bottom: 50px;
+    backface-visibility: hidden;
+    margin-bottom: 50px;
 }
 
-
 .heading-primary-main {
-     font-family: 'muller_demoextrabold';
-     display: block;
-     font-size: 60px;
-     font-weight: 700;
-     letter-spacing: 35px;
-     animation-name: moveLeft;
-     animation-duration: 1s;
-     animation-delay: 1s;
-     animation-timing-function: ease-out;
-     animation-fill-mode: backwards;
-     margin-bottom: 15px;
-
-
+    font-family: "muller_demoextrabold";
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 35px;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    margin-bottom: 15px;
 }
 
 .heading-sub {
-     /* font-family: 'Lato', sans-serif; */
-     font-family: 'Montserrat', sans-serif;
-     display: block;
-     font-size: 20px;
-     letter-spacing: 17.4px;
-     /* animation-name: moveRight;
+    /* font-family: 'Lato', sans-serif; */
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 17.4px;
+    /* animation-name: moveRight;
      animation-duration: 1s;
      animation-delay: 2s;
      animation-timing-function: ease-out; */
-     animation: moveRight 1s 2s ease-out;
-     animation-fill-mode: backwards;
+    animation: moveRight 1s 2s ease-out;
+    animation-fill-mode: backwards;
 }
 
 .btn:link,
 .btn:visited {
-     font-family: 'Lato', sans-serif;
-     font-weight: 400;
-     text-transform: uppercase;
-     text-decoration: none;
-     padding: 15px 40px;
-     display: inline-block;
-     border-radius: 100px;
-     transition: all .2s;
-     position: relative;
-     letter-spacing: 1px;
-
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .btn:active {
-     transform: translateY(-1px);
-     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
-     background-color: #fff;
-     color: #777;
-
+    background-color: #fff;
+    color: #777;
 }
 
 .btn::after {
-     content: "";
-     display: inline-block;
-     height: 100%;
-     width: 100%;
-     border-radius: 100px;
-     position: absolute;
-     top: 0;
-     left: 0;
-     z-index: -1;
-     transition: all .4s;
-
-
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
 }
 
 .btn-white::after {
-     background-color: #fff;
+    background-color: #fff;
 }
 
 .btn:hover::after {
-     transform: scaleX(1.5) scaleY(1.6);
-     opacity: 0;
-
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
 }
-
 
 .btn-animate {
-     animation-name: btn-ani;
-     animation-duration: 1s;
-     animation-timing-function: ease-out;
-     animation-delay: 3s;
-     animation-fill-mode: backwards;
+    animation-name: btn-ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
 }
 
-
-
-
 .section-about {
-     background-color: #f9f9f9;
-
+    background-color: #f9f9f9;
 }
 
 .heading-section-about {
-     font-family: 'muller_demoextrabold';
-     font-size: 3.5rem;
-     text-transform: uppercase;
-     font-weight: 700;
-     background-image: linear-gradient(to right,
-               rgba(0, 0, 70, 0.897),
-               rgba(28, 181, 224, 0.432));
-     letter-spacing: 4px;
-     transition: all .2s;
+    font-family: "muller_demoextrabold";
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 70, 0.897),
+        rgba(28, 181, 224, 0.432)
+    );
+    letter-spacing: 4px;
+    transition: all 0.2s;
 
-     margin: 100px 0;
+    margin: 100px 0;
 
+    /* text-gradient */
 
-     /* text-gradient */
-
-
-     display: inline-block;
-     -webkit-background-clip: text;
-     color: transparent;
-
-
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-
-
 .heading-section-about:hover {
-     transform: skewY(3deg) skewX(3deg);
-     text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, .2);
+    transform: skewY(3deg) skewX(3deg);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .rules {
-     font-size: 18px;
-     text-align: center;
-
-
+    font-size: 18px;
+    text-align: center;
 }
-
-
-
-
 
 /*section about images*/
 
 .distancing,
 .handwash,
 .work-from-home {
-     height: 150px;
-     margin-bottom: 20px;
-     /* -webkit-box-shadow: 0 10px 6px -6px #777;
+    height: 150px;
+    margin-bottom: 20px;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
      box-shadow: 0 10px 6px -6px #777; */
 }
-
 
 .cover-cough,
 .mask,
 .illness {
-     height: 150px;
-     margin: 20px 0;
-     /* -webkit-box-shadow: 0 10px 6px -6px #777;
+    height: 150px;
+    margin: 20px 0;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
      box-shadow: 0 10px 6px -6px #777; */
-
-
 }
 
-
-
-.handwash:hover,
-.distancing:hover,
-.work-from-home:hover,
-.cover-cough:hover,
-.illness:hover,
-.mask:hover {
-     transform: scale(1.1, 1.1);
-
+.hoverable {
+    transition: all 0.3s;
 }
 
+.hover {
+    transform: scale(1.1, 1.1);
+}
 
 @keyframes moveLeft {
-     0% {
-          opacity: 0;
-          transform: translateX(-100px);
-     }
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 
-     80% {
-          transform: translateX(10px);
-     }
+    80% {
+        transform: translateX(10px);
+    }
 
-     100% {
-          opacity: 1;
-          transform: translate(0);
-     }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-
 @keyframes moveRight {
-     0% {
-          opacity: 0;
-          transform: translateX(100px);
-     }
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
 
-     80% {
-          transform: translateX(-10px);
-     }
+    80% {
+        transform: translateX(-10px);
+    }
 
-     100% {
-          opacity: 1;
-          transform: translate(0);
-     }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @keyframes logo {
-     0% {
-          opacity: 1;
-          transform: translate(0);
-     }
+    0% {
+        opacity: 1;
+        transform: translate(0);
+    }
 
-     50% {
-          opacity: 1;
-          transform: rotate(-90deg);
-     }
+    50% {
+        opacity: 1;
+        transform: rotate(-90deg);
+    }
 
-     100% {
-          opacity: 1;
-          transform: translate(0);
-     }
-
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
 @keyframes btn-ani {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
 
-     0% {
-          opacity: 0;
-          transform: translateY(30px);
-
-     }
-
-     100% {
-          opacity: 1;
-          transform: translate(0);
-
-     }
-
-
-
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
+@media (max-width: 580px) {
+    .header {
+        position: relative;
+        height: 100vh;
+        background-image: linear-gradient(
+                to right top,
+                #000046d7,
+                rgba(28, 181, 224, 0.199)
+            ),
+            url("images/header-mobile.jpg");
+        background-position: top;
+        background-size: cover;
+    }
 
-@media (max-width:580px) {
+    .heading-primary {
+        color: #fff;
+        text-transform: uppercase;
 
-     .header {
-          position: relative;
-          height: 100vh;
-          background-image: linear-gradient(to right top, #000046d7, rgba(28, 181, 224, 0.199)), url('images/header-mobile.jpg');
-          background-position: top;
-          background-size: cover;
+        backface-visibility: hidden;
+        margin-bottom: 40px;
+        text-align: center;
+    }
 
-     }
+    .heading-primary-main {
+        font-family: "muller_demoextrabold";
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 25px;
+        animation-name: moveLeft;
+        animation-duration: 1s;
+        margin-bottom: 10px;
+        animation-fill-mode: backwards;
+    }
 
-
-     .heading-primary {
-          color: #fff;
-          text-transform: uppercase;
-
-          backface-visibility: hidden;
-          margin-bottom: 40px;
-          text-align: center;
-
-     }
-
-
-     .heading-primary-main {
-          font-family: 'muller_demoextrabold';
-          display: block;
-          font-size: 40px;
-          font-weight: 700;
-          letter-spacing: 25px;
-          animation-name: moveLeft;
-          animation-duration: 1s;
-          margin-bottom: 10px;
-          animation-fill-mode: backwards;
-
-     }
-
-     .heading-sub {
-          font-family: 'Montserrat', sans-serif;
-          display: block;
-          font-size: 15px;
-          letter-spacing: 13px;
-          /* animation-name: moveRight;
+    .heading-sub {
+        font-family: "Montserrat", sans-serif;
+        display: block;
+        font-size: 15px;
+        letter-spacing: 13px;
+        /* animation-name: moveRight;
           animation-duration: 1s;
           animation-delay: 2s;
           animation-timing-function: ease-out; */
-          animation: moveRight 1s 2s ease-out;
-          animation-fill-mode: backwards;
-     }
+        animation: moveRight 1s 2s ease-out;
+        animation-fill-mode: backwards;
+    }
 
+    .logo:hover {
+        animation: logo 0.7s ease;
+    }
 
-     .logo:hover {
-          animation: logo 0.7s ease;
-     }
+    .rules {
+        font-size: 15px;
+    }
 
-     .rules {
-          font-size: 15px;
-
-     }
-
-     .distancing,
-     .handwash,
-     .work-from-home,
-     .cover-cough,
-     .mask,
-     .illness {
-          height: 100px;
-     }
-
-
+    .distancing,
+    .handwash,
+    .work-from-home,
+    .cover-cough,
+    .mask,
+    .illness {
+        height: 100px;
+    }
 }
