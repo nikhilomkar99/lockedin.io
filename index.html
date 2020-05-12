@@ -160,7 +160,9 @@
                 });
 
                 $(".hoverable").on("touchend", function () {
-                    $(this).removeClass("hover");
+                    setTimeout(function () {
+                        $(".hoverable").removeClass("hover");
+                    }, 290);
                 });
             } else {
                 $(".hoverable").on("mouseenter", function () {
