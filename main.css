@@ -441,6 +441,7 @@ body {
 
      .covid-description {
           margin: 0 25px;
+          text-align: left!important;
           /* margin-bottom: 100px; */
      }
 
